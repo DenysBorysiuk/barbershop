@@ -187,8 +187,7 @@ body {
 /* hero */
 .hero {
   display: flex;
-  outline: 1px solid #ff6c00;
-  background-color: gray;
+  background-color: var(--dark-bg-color);
 }
 
 .hero-link {
@@ -419,17 +418,24 @@ body {
 /* contacts */
 .contacts {
   background: #191c26;
-  background-image: url(../images/contacts/Bg.png);
-  background-repeat: no-repeat;
-  background-position: 72%;
 }
 
+.overlay {
+  background-size: 625px;
+  background-image: url(../images/contacts/Bg.png);
+  background-repeat: no-repeat;
+  background-position: 76%;
+}
 .contacts .container {
   display: flex;
 }
 
 .contacts-form-title {
   color: var(--main-color);
+}
+
+.contacts-group {
+  margin-left: 100px;
 }
 
 .contacts-title {
