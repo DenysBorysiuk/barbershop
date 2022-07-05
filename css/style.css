@@ -17,7 +17,6 @@
   --card-set-gap: 30px;
 }
 
-/* Плавная прокрутка */
 html {
   scroll-behavior: smooth;
 }
@@ -27,10 +26,7 @@ body {
   color: var(--main-font-color);
   font-size: 18px;
   letter-spacing: 0.02em;
-  background-color: var(--main-color);
 }
-
-/* Правильное скрытие элемента */
 
 .visually-hidden {
   position: absolute;
@@ -59,7 +55,7 @@ ul {
   margin: 0;
 }
 
-.list {
+ul {
   list-style: none;
   padding: 0;
 }
@@ -232,9 +228,7 @@ img {
 */
 
 .about {
-  background-color: var(--main-color);
   outline: 1px solid #ff6c00;
-
   display: flex;
 }
 
@@ -308,10 +302,11 @@ img {
   color: #9da4bd;
 }
 
-/* why */
-.why {
-  background-color: var(--main-color);
-}
+/**
+  |============================
+  | Why section
+  |============================
+*/
 
 .why > .container {
   display: flex;
