@@ -22,25 +22,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Global Styles */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 body {
   font-family: var(--primary-font);
   color: var(--main-font-color);
@@ -49,33 +30,6 @@ body {
   background-color: var(--main-color);
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.link:hover,
-.link:focus {
-  color: var(--acent-color);
-}
-
-.icon {
-  fill: currentColor;
-}
 /* Правильное скрытие элемента */
 
 .visually-hidden {
@@ -92,7 +46,39 @@ body {
   overflow: hidden;
 }
 
-/* Common Styles */
+/* reset styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* Base Styles */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .section {
   padding-top: 130px;
@@ -118,6 +104,16 @@ body {
   margin-bottom: 20px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.icon {
+  fill: currentColor;
+}
+
 .btn {
   font-weight: 600;
   font-size: 12px;
@@ -136,7 +132,17 @@ body {
   background: var(--acent-color);
 }
 
-/* header */
+.link:hover,
+.link:focus {
+  color: var(--acent-color);
+}
+
+/**
+  |============================
+  | Header section
+  |============================
+*/
+
 .header {
   align-items: center;
   outline: 1px solid #ff6c00;
@@ -184,7 +190,12 @@ body {
   color: var(--main-color);
 }
 
-/* hero */
+/**
+  |============================
+  | Hero section
+  |============================
+*/
+
 .hero {
   display: flex;
   background-color: var(--dark-bg-color);
@@ -214,7 +225,11 @@ body {
   color: var(--secondary-font-color);
 }
 
-/* about */
+/**
+  |============================
+  | About section
+  |============================
+*/
 
 .about {
   background-color: var(--main-color);
@@ -261,7 +276,12 @@ body {
   color: var(--main-font-color);
 }
 
-/* price */
+/**
+  |============================
+  | Price section
+  |============================
+*/
+
 .price {
   background-color: #111319;
   background-image: url(../images/price/img.png);
@@ -314,10 +334,6 @@ body {
   padding: 20px 20px;
 }
 
-/* .why-item:nth-child(2n) {
-  margin-top: 30px;
-} */
-
 .why-item-number {
   font-weight: 700;
   font-size: 42px;
@@ -343,7 +359,12 @@ body {
   width: 500px;
 }
 
-/* masters */
+/**
+  |============================
+  | Masters section
+  |============================
+*/
+
 .masters {
   background: #f7f7f7;
 }
@@ -405,7 +426,12 @@ body {
   color: var(--main-font-color);
 }
 
-/* portfolio */
+/**
+  |============================
+  | Portfolio section
+  |============================
+*/
+
 .portfolio-uppertitle {
   margin-bottom: 44px;
 }
@@ -415,7 +441,11 @@ body {
   justify-content: space-between;
 }
 
-/* contacts */
+/**
+  |============================
+  | Contacts section
+  |============================
+*/
 .contacts {
   background: #191c26;
 }
@@ -458,7 +488,11 @@ body {
   color: #9da4bd;
 }
 
-/* footer */
+/**
+  |============================
+  | Footer section
+  |============================
+*/
 
 .footer .container {
   display: flex;
