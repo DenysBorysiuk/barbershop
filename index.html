@@ -327,24 +327,51 @@
       <!-- contacts sections -->
       <section class="contacts section" id="contacts">
         <div class="container contacts-container">
-          <div class="contacts-form">
+          <div class="contacts-left-side">
             <h2 class="contacts-form-title section-title">Онлайн-запись</h2>
-            <form>
-              <label for="">
-                <input type="text" />
+            <form class="contacts-form">
+              <div class="contacts-form-wrap">
+                <label class="contacts-form-group">
+                  <input
+                    class="contacts-form-input"
+                    type="text"
+                    name="username"
+                    placeholder="Antony Black"
+                    required
+                    minlength="3"
+                  />
+                  <span class="contacts-form-label">имя*</span>
+                  <span class="contacts-form-notification">Укажите минимум 3 символа</span>
+                </label>
+                <label class="contacts-form-group">
+                  <input
+                    class="contacts-form-input"
+                    type="tel"
+                    name="tel"
+                    placeholder="+38 050 555 55 55"
+                    required
+                    pattern="\+?[0-9\s\-\(\)]+"
+                    minlength="13"
+                    maxlength="13"
+                  />
+                  <span class="contacts-form-label">телефон*</span>
+                </label>
+              </div>
+              <label class="contacts-form-group">
+                <textarea
+                  class="contacts-form-message"
+                  name="message"
+                  placeholder=" "
+                  rows="5"
+                ></textarea>
+                <span class="contacts-form-label">Сообщение</span>
               </label>
-              <label for="">
-                <input type="text" />
-              </label>
-              <!-- <label for="">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-              </label> -->
               <div>
-                <button class="btn" type="submit">отправить</button>
+                <button class="btn contacts-form-btn" type="submit">отправить</button>
               </div>
             </form>
           </div>
-          <div class="contacts-group">
+          <div class="contacts-right-side">
             <h2 class="contacts-title section-title">Контакты</h2>
             <address class="contacts-address">
               <ul class="contacts-list">
