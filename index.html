@@ -11,31 +11,28 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body data-page>
     <!-- header sections -->
     <header class="header" data-header>
-      <div class="header-container container">
-        <nav class="header-nav">
-          <a class="logo" href="/">
+      <div class="header__container container">
+        <nav class="nav">
+          <a class="header__logo" href="/">
             <img src="./images/icons/Logo.svg" alt="logo" />
           </a>
-          <ul class="header-list">
-            <li class="header-item"><a class="header-link link" href="#about">О нас</a></li>
-            <li class="header-item"><a class="header-link link" href="#price">Услуги и цены</a></li>
-            <li class="header-item"><a class="header-link link" href="#masters">Мастера</a></li>
-            <li class="header-item"><a class="header-link link" href="#contacts">Контакты</a></li>
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+            <li class="nav__item"><a class="nav__link" href="#price">Услуги и цены</a></li>
+            <li class="nav__item"><a class="nav__link" href="#masters">Мастера</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
-        <div class="header-contacts">
-          <a class="header-phone link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="header-btn btn" type="button" data-modal-open>ОНЛАЙН ЗАПИСЬ</button>
+        <div class="header__contacts">
+          <a class="header__phone" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="header__btn btn" type="button" data-modal-open>ОНЛАЙН ЗАПИСЬ</button>
         </div>
       </div>
     </header>
@@ -44,25 +41,23 @@
     <main>
       <!-- hero sections -->
       <section class="hero" id="hero">
-        <div class="hero-container container">
-          <div class="hero-left-side">
-            <ul class="hero-list">
-              <li class="hero-item">
-                <a class="link hero-link" target="_blank" rel="noopener noreferrer" href=""
+        <div class="hero__container container">
+          <div class="hero__left-side">
+            <ul class="hero__list">
+              <li class="hero__item">
+                <a class="hero__link" target="_blank" rel="noopener noreferrer" href=""
                   >Instagram</a
                 >
               </li>
-              <li class="hero-item">
-                <a class="link hero-link" target="_blank" rel="noopener noreferrer" href=""
-                  >Youtube</a
-                >
+              <li class="hero__item">
+                <a class="hero__link" target="_blank" rel="noopener noreferrer" href="">Youtube</a>
               </li>
             </ul>
           </div>
-          <div class="hero-right-side">
+          <div class="hero__right-side">
             <p class="uppertitle-dark-bg uppertitle" lang="en">A HAIR SALON FOR MEN IN KYIV</p>
-            <h1 class="hero-title">BarberShop</h1>
-            <p class="hero-desc">
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="hero__desc">
               Мы эксперты в модных мужских стрижках. Работаем&nbsp;быстро, осторожно и со вкусом.
             </p>
             <div class="pagination">
@@ -437,6 +432,61 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form class="register-form">
+          <strong class="register-form-title">Оставьте свои данные, мы вам перезвоним</strong>
+          <div class="register-form-group" role="group">
+            <label class="register-form-wrap">
+              <span class="register-form-label">Имя</span>
+              <input class="register-form-input" type="text" />
+              <svg class="register-form-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-profile"></use>
+              </svg>
+            </label>
+            <label class="register-form-wrap">
+              <span class="register-form-label">Телефон</span>
+              <input class="register-form-input" type="tel" />
+              <svg class="register-form-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <label class="register-form-wrap">
+              <span class="register-form-label">Почта</span>
+              <input class="register-form-input" type="email" />
+              <svg class="register-form-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </label>
+            <label class="register-form-wrap">
+              <span class="register-form-label">Комментарий</span>
+              <textarea
+                class="register-form-message"
+                name=""
+                rows="5"
+                placeholder="Введите свое сообщение"
+              ></textarea>
+            </label>
+          </div>
+
+          <label class="register-form-agreement">
+            <input class="register-checkbox visuaaly-hidden" type="checkbox" name="agreement" />
+            <svg class="register-icon" width="20" height="20">
+              <use class="register-icon-uncheck" href="./images/icons.svg#icon-uncheck"></use>
+              <use class="register-icon-check" href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <span class="register-form-agreement-text">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="register-form-agreement-link" href="">Условия договора</a>
+            </span>
+          </label>
+
+          <button class="register-form-btn" type="submit">
+            Отправить
+            <svg class="register-form-btn-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-plane"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/header-scroll.js"></script>

@@ -1,0 +1,20 @@
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  background-color: transparent;
+  padding: 12px 20px;
+
+  border: 1px solid var(--acent-color);
+  border-radius: 25px;
+
+  transition: background-color var(--animation);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--acent-color);
+}
