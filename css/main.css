@@ -266,7 +266,7 @@ summary {
   --primary-font: "Open sans", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --main-color: #fff;
-  --acent-color: #ff6c00;
+  --accent-cl: #ff6c00;
   --main-font-color: #303030;
   --secondary-font-color: #9da4bd;
   --bg-color: #f7f7f7;
@@ -397,7 +397,7 @@ ul {
   color: var(--main-color);
   background-color: transparent;
   padding: 12px 20px;
-  border: 1px solid var(--acent-color);
+  border: 1px solid var(--accent-cl);
   border-radius: 25px;
   -webkit-transition: background-color var(--animation);
   transition: background-color var(--animation);
@@ -405,7 +405,7 @@ ul {
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--acent-color);
+  background-color: var(--accent-cl);
 }
 
 .card-set {
@@ -510,7 +510,7 @@ ul {
   transition: color var(--animation);
 }
 .socials__link:hover, .socials__link:focus {
-  color: var(--acent-color);
+  color: var(--accent-cl);
 }
 
 .register-form {
@@ -546,11 +546,14 @@ ul {
 
 .register-form__input {
   width: 100%;
-  border: 1px solid #ff6c00;
+  border: 1px solid #303030;
   padding: 10px;
   padding-left: 50px;
   border-radius: 5px;
   outline: transparent;
+}
+.register-form__input:hover, .register-form__input:focus {
+  border-color: var(--accent-cl);
 }
 
 .register-form__message {
@@ -559,9 +562,12 @@ ul {
   height: 90px;
   padding: 10px;
   resize: none;
-  border: 1px solid #ff6c00;
+  border: 1px solid #303030;
   border-radius: 5px;
   outline: transparent;
+}
+.register-form__message:hover, .register-form__message:focus {
+  border-color: var(--accent-cl);
 }
 
 .register-form__icon {
@@ -583,7 +589,7 @@ ul {
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
-  border: 1px solid #ff6c00;
+  border: 1px solid var(--accent-cl);
   cursor: pointer;
 }
 
@@ -793,27 +799,58 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 8px;
-  margin-bottom: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 7px;
+  margin-bottom: 30px;
 }
 .agreement__text {
+  font-weight: 400;
   font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--secondary-font-cl);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  text-underline-position: under;
 }
 .agreement__link {
-  color: #ff6c00;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  text-underline-position: under;
+  color: var(--accent-cl);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .agreement__icon {
   -webkit-transition: fill var(--animation);
   transition: fill var(--animation);
 }
-.agreement__checkbox:hover + .agreement__icon, .agreement__checkbox:focus + .agreement__icon {
-  fill: var(--acent-color);
+.agreement__checkbox:focus + .agreement__icon {
+  fill: var(--accent-cl);
+}
+
+.agreement__checkbox:checked + .agreement__icon .agreement__icon-uncheck {
+  opacity: 0;
+  -webkit-transition: opacity var(--animation);
+  transition: opacity var(--animation);
+}
+
+.agreement__icon-check {
+  opacity: 0;
+  -webkit-transition: opacity var(--animation);
+  transition: opacity var(--animation);
+}
+.agreement__checkbox:checked + .agreement__icon .agreement__icon-check {
+  opacity: 1;
 }
 
 .header {
@@ -864,7 +901,7 @@ ul {
   transition: color var(--animation);
 }
 .header__phone:hover, .header__phone:focus {
-  color: var(--acent-color);
+  color: var(--accent-cl);
 }
 
 .nav {
@@ -895,7 +932,7 @@ ul {
   transition: color var(--animation);
 }
 .nav__link:hover, .nav__link:focus {
-  color: var(--acent-color);
+  color: var(--accent-cl);
 }
 
 .hero {
@@ -978,7 +1015,7 @@ ul {
   transition: color var(--animation);
 }
 .hero__link:hover, .hero__link:focus {
-  color: var(--acent-color);
+  color: var(--accent-cl);
 }
 
 .about {
@@ -1294,7 +1331,7 @@ ul {
   transition: color var(--animation);
 }
 .footer__link:hover, .footer__link:focus {
-  color: var(--acent-color);
+  color: var(--accent-cl);
 }
 
 .backdrop {
@@ -1360,4 +1397,7 @@ ul {
   border: 1px solid #ff6c00;
   background-color: transparent;
   cursor: pointer;
+}
+.modal__btn:hover, .modal__btn:focus {
+  background-color: var(--accent-cl);
 }/*# sourceMappingURL=main.css.map */

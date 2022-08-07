@@ -33,12 +33,17 @@
 
 .register-form__input {
   width: 100%;
-  border: 1px solid #ff6c00;
+  border: 1px solid #303030;
   padding: 10px;
   padding-left: 50px;
   border-radius: 5px;
 
   outline: transparent;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-cl);
+  }
 }
 
 .register-form__message {
@@ -48,9 +53,14 @@
   padding: 10px;
   resize: none;
 
-  border: 1px solid #ff6c00;
+  border: 1px solid #303030;
   border-radius: 5px;
   outline: transparent;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-cl);
+  }
 }
 
 .register-form__icon {
@@ -73,7 +83,7 @@
   text-transform: uppercase;
 
   background-color: transparent;
-  border: 1px solid #ff6c00;
+  border: 1px solid var(--accent-cl);
 
   cursor: pointer;
 }

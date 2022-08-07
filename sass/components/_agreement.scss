@@ -1,41 +1,43 @@
 .agreement {
   display: flex;
   align-items: center;
-  // justify-content: center;
-  gap: 8px;
-  margin-bottom: 25px;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 30px;
 
   &__text {
-    font-size: 12px;
+    @include fonts(12px, 24px);
+    color: var(--secondary-font-cl);
     user-select: none;
-    text-underline-position: under;
   }
 
   &__link {
-    color: #ff6c00;
+    @include fonts(12px, 24px);
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--accent-cl);
+    user-select: none;
   }
 }
 
 .agreement__icon {
   transition: fill var(--animation);
 
-  .agreement__checkbox:hover + &,
   .agreement__checkbox:focus + & {
-    fill: var(--acent-color);
+    fill: var(--accent-cl);
   }
 }
 
-// .agreement__checkbox:checked + .agreement__icon .agreement__icon--uncheck {
-//   opacity: 0;
-//   transition: opacity var(--animation);
-// }
+.agreement__checkbox:checked + .agreement__icon .agreement__icon-uncheck {
+  opacity: 0;
+  transition: opacity var(--animation);
+}
 
-// .agreement__icon-check {
-//   opacity: 1;
-//   transition: opacity var(--animation);
-// }
+.agreement__icon-check {
+  opacity: 0;
+  transition: opacity var(--animation);
 
-//   .agreement__checkbox:checked + .agreement__icon .agreement__icon--check {
-//     opacity: 1;
-//   }
-// }
+  .agreement__checkbox:checked + .agreement__icon & {
+    opacity: 1;
+  }
+}
