@@ -3,7 +3,7 @@
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #191c26;
+  background-color: var(--dark-bg-cl);
   background-image: url(../images/contacts/Bg.png);
   background-repeat: no-repeat;
   background-position: top 0 left calc(50% + 328px);
@@ -22,12 +22,10 @@
   }
 
   &__form-title {
-    color: var(--main-color);
     margin-bottom: 44px;
   }
 
   &__title {
-    color: var(--main-color);
     margin-bottom: 40px;
   }
 
@@ -37,19 +35,17 @@
     align-items: center;
     gap: 16px;
 
+    @include fonts(18px, 30px);
     font-style: normal;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: #9da4bd;
+    color: var(--secondary-font-cl);
   }
 
   &__uppertitle {
-    color: var(--main-color);
+    color: var(--main-light-cl);
   }
 
   &__time {
-    color: #9da4bd;
+    color: var(--secondary-font-cl);
   }
 }
 

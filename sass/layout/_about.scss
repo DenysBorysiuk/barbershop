@@ -15,27 +15,23 @@
     flex-basis: 500px;
   }
 
-  &__subtitle {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: #555555;
-
+  &__title {
     margin-bottom: 20px;
   }
 
-  &__desc {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
-    color: #555555;
+  &__subtitle {
+    margin-bottom: 20px;
 
+    @include fonts(18px, 30px);
+  }
+
+  &__desc {
     margin-bottom: 40px;
+
+    @include fonts(14px, 26px);
   }
 
   &__btn {
-    color: var(--main-font-color);
+    color: var(--main-dark-cl);
   }
 }

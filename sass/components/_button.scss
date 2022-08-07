@@ -1,13 +1,12 @@
 .btn {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--main-color);
-  background-color: transparent;
+  min-width: 160px;
   padding: 12px 20px;
 
+  @include fonts(12px, 16px, 600, 0.09em);
+  text-transform: uppercase;
+  color: var(--main-light-cl);
+
+  background-color: transparent;
   border: 1px solid var(--accent-cl);
   border-radius: 25px;
 

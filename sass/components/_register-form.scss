@@ -6,7 +6,7 @@
   display: block;
   margin-bottom: 25px;
 
-  font-size: 18px;
+  @include fonts(14px, 18px, 700, 0.02em);
   text-align: center;
 }
 
@@ -26,19 +26,22 @@
 
 .register-form__label {
   display: block;
-  text-align: left;
   margin-bottom: 6px;
   padding-left: 5px;
+
+  text-align: left;
 }
 
 .register-form__input {
   width: 100%;
-  border: 1px solid #303030;
+  border: 1px solid var(--main-dark-cl);
   padding: 10px;
   padding-left: 50px;
   border-radius: 5px;
 
   outline: transparent;
+
+  transition: border-color var(--animation);
 
   &:hover,
   &:focus {
@@ -53,9 +56,10 @@
   padding: 10px;
   resize: none;
 
-  border: 1px solid #303030;
+  border: 1px solid var(--main-dark-cl);
   border-radius: 5px;
   outline: transparent;
+  transition: border-color var(--animation);
 
   &:hover,
   &:focus {
@@ -74,11 +78,9 @@
   margin: 0 auto;
   align-items: center;
   gap: 8px;
-
   padding: 10px 25px;
 
-  color: #303030;
-  font-weight: 700;
+  color: var(--main-dark-cl);
   text-align: center;
   text-transform: uppercase;
 

@@ -29,11 +29,9 @@
   }
 
   &__title {
+    @include fonts(72px, 85px, 700, 0.05em);
     font-family: var(--secondary-font);
-    font-size: 72px;
-    line-height: 1.18;
-    letter-spacing: 0.05em;
-    color: var(--main-color);
+    color: var(--main-light-cl);
 
     animation: fade-in 800ms ease 500ms backwards alternate;
     transform-origin: left center;
@@ -58,16 +56,13 @@
     display: block;
     width: 60px;
     height: 1px;
-    background-color: #303030;
+    background-color: var(--main-dark-cl);
   }
 }
 
 .hero__link {
   @extend %reset-link;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
+  @include fonts(11px, 15px, 600, 0.2em);
 
   transition: color var(--animation);
 

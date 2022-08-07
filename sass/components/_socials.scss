@@ -12,8 +12,10 @@
   align-items: center;
   width: 44px;
   height: 44px;
+
   border-radius: 50%;
-  background-color: var(--main-color);
+  background-color: var(--main-light-cl);
+
   transition: color var(--animation);
 
   &:hover,
