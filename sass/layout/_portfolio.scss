@@ -1,8 +1,11 @@
-.portfolio-uppertitle {
-  margin-bottom: 44px;
-}
+.portfolio {
+  @include section;
 
-.portfolio-list {
-  display: flex;
-  --items: 4;
+  &__uppertitle {
+    margin-bottom: 44px;
+  }
+
+  &__list {
+    --items: 4;
+  }
 }

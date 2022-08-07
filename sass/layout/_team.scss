@@ -1,0 +1,33 @@
+.team {
+  @include section;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f7f7f7;
+
+  &__title {
+    margin-bottom: 44px;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 8px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+  }
+
+  &__desc {
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--acent-color);
+  }
+}

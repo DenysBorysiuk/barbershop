@@ -1,6 +1,6 @@
 .socials {
-  @extend %reset-list;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 10px;
 }
@@ -13,26 +13,11 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: var(--main-color);
+  transition: color var(--animation);
 
-  &--light-theme {
-    color: var(--icon-cl);
-
-    transition: color var(--animation), background-color var(--animation);
-  }
-
-  &--light-theme:hover {
-    color: var(--main-light);
-    background-color: var(--accent-cl);
-  }
-
-  &--dark-theme {
-    color: var(--main-light);
-    background-color: rgba(255, 255, 255, 0.1);
-
-    transition: background-color var(--animation);
-  }
-
-  &--dark-theme:hover {
-    background-color: var(--accent-cl);
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
   }
 }
