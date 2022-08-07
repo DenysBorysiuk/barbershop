@@ -63,6 +63,7 @@
 }
 
 .hero__link {
+  @extend %reset-link;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;

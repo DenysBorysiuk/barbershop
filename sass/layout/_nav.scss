@@ -9,6 +9,7 @@
 }
 
 .nav__link {
+  @extend %reset-link;
   display: inline-block;
   padding-top: 52px;
   padding-bottom: 52px;

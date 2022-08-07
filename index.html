@@ -406,60 +406,56 @@
 
     <!-- footer sections -->
     <footer class="footer">
-      <div class="footer-container container">
-        <p class="footer-copyright">&#169; Copyright 2022</p>
-        <ul class="footer-list">
-          <li class="footer-item">
-            <a class="footer-link instagram link" target="_blank" rel="noopener noreferrer" href=""
-              >Instagram</a
-            >
+      <div class="footer__container container">
+        <p class="footer__copyright">&#169; Copyright 2022</p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" target="_blank" rel="noopener noreferrer" href="">Instagram</a>
           </li>
-          <li class="footer-item">
-            <a class="footer-link link" target="_blank" rel="noopener noreferrer" href=""
-              >Youtube</a
-            >
+          <li class="footer__item">
+            <a class="footer__link" target="_blank" rel="noopener noreferrer" href="">Youtube</a>
           </li>
         </ul>
       </div>
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop--is-hidden backdrop" data-modal>
       <div class="modal">
-        <button class="modal-btn" data-modal-close>
-          <svg class="modal-btn-icon" width="8" height="8">
+        <button class="modal__btn" data-modal-close>
+          <svg class="modal__icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
         <form class="register-form">
-          <strong class="register-form-title">Оставьте свои данные, мы вам перезвоним</strong>
-          <div class="register-form-group" role="group">
-            <label class="register-form-wrap">
-              <span class="register-form-label">Имя</span>
-              <input class="register-form-input" type="text" />
-              <svg class="register-form-icon" width="20" height="20">
+          <strong class="register-form__title">Оставьте свои данные, мы вам перезвоним</strong>
+          <div class="register-form__group" role="group">
+            <label class="register-form__wrap">
+              <span class="register-form__label">Имя</span>
+              <input class="register-form__input" type="text" />
+              <svg class="register-form__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-profile"></use>
               </svg>
             </label>
-            <label class="register-form-wrap">
-              <span class="register-form-label">Телефон</span>
-              <input class="register-form-input" type="tel" />
-              <svg class="register-form-icon" width="20" height="20">
+            <label class="register-form__wrap">
+              <span class="register-form__label">Телефон</span>
+              <input class="register-form__input" type="tel" />
+              <svg class="register-form__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </label>
-            <label class="register-form-wrap">
-              <span class="register-form-label">Почта</span>
-              <input class="register-form-input" type="email" />
-              <svg class="register-form-icon" width="20" height="20">
+            <label class="register-form__wrap">
+              <span class="register-form__label">Почта</span>
+              <input class="register-form__input" type="email" />
+              <svg class="register-form__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
             </label>
-            <label class="register-form-wrap">
-              <span class="register-form-label">Комментарий</span>
+            <label class="register-form__wrap">
+              <span class="register-form__label">Комментарий</span>
               <textarea
-                class="register-form-message"
+                class="register-form__message"
                 name=""
                 rows="5"
                 placeholder="Введите свое сообщение"
@@ -467,24 +463,26 @@
             </label>
           </div>
 
-          <label class="register-form-agreement">
-            <input class="register-checkbox visuaaly-hidden" type="checkbox" name="agreement" />
-            <svg class="register-icon" width="20" height="20">
-              <use class="register-icon-uncheck" href="./images/icons.svg#icon-uncheck"></use>
-              <use class="register-icon-check" href="./images/icons.svg#icon-check"></use>
+          <label class="agreement">
+            <input
+              class="agreement__checkbox vvisually-hidden"
+              type="checkbox"
+              name="agreement__checkbox"
+            />
+            <svg class="agreement__icon" width="16" height="15">
+              <!-- <use
+                class="agreement__icon agreement__icon--uncheck"
+                href="./images/icons.svg#icon-uncheck"
+              ></use> -->
+              <use class="agreement__icon-check" href="./images/icons.svg#icon-check"></use>
             </svg>
-            <span class="register-form-agreement-text">
+            <span class="agreement__text">
               Соглашаюсь с рассылкой и принимаю
-              <a class="register-form-agreement-link" href="">Условия договора</a>
+              <a class="agreement__link" href="">Условия договора</a>
             </span>
           </label>
 
-          <button class="register-form-btn" type="submit">
-            Отправить
-            <svg class="register-form-btn-icon" width="20" height="20">
-              <use href="./images/icons.svg#icon-plane"></use>
-            </svg>
-          </button>
+          <button class="register-form__btn btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>

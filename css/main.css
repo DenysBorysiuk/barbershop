@@ -295,14 +295,9 @@ summary {
   overflow: hidden;
 }
 
-.contacts__link, .socials__link {
+.footer__link, .contacts__link, .hero__link, .nav__link, .header__phone, .socials__link {
   text-decoration: none;
   color: currentColor;
-}
-
-.section {
-  padding-top: 130px;
-  padding-bottom: 130px;
 }
 
 html {
@@ -522,35 +517,34 @@ ul {
   text-align: center;
 }
 
-.register-form-title {
+.register-form__title {
   display: block;
   margin-bottom: 25px;
   font-size: 18px;
   text-align: center;
 }
 
-.register-form-group {
+.register-form__group {
   margin-bottom: 25px;
 }
 
-.register-form-wrap {
+.register-form__wrap {
   position: relative;
   display: block;
   margin-bottom: 12px;
 }
-.register-form-wrap:last-child {
+.register-form__wrap:last-child {
   margin-bottom: 0;
 }
 
-.register-form-label {
+.register-form__label {
   display: block;
   text-align: left;
   margin-bottom: 6px;
   padding-left: 5px;
 }
 
-.register-form-input,
-.register-form-message {
+.register-form__input {
   width: 100%;
   border: 1px solid #ff6c00;
   padding: 10px;
@@ -559,65 +553,26 @@ ul {
   outline: transparent;
 }
 
-.register-form-message {
-  padding: 10px;
+.register-form__message {
+  display: block;
+  width: 100%;
   height: 90px;
+  padding: 10px;
   resize: none;
+  border: 1px solid #ff6c00;
+  border-radius: 5px;
+  outline: transparent;
 }
 
-.register-form-icon {
+.register-form__icon {
   position: absolute;
   bottom: 10px;
   left: 15px;
 }
 
-.register-form-agreement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-  margin-bottom: 25px;
-}
-
-.register-checkbox:checked + .register-icon .register-icon-uncheck {
-  opacity: 0;
-  -webkit-transition: opacity var(--anim-fast);
-  transition: opacity var(--anim-fast);
-}
-
-.register-icon-check {
-  opacity: 0;
-  fill: #ff6c00;
-  -webkit-transition: opacity var(--anim-fast);
-  transition: opacity var(--anim-fast);
-}
-.register-checkbox:checked + .register-icon .register-icon-check {
-  opacity: 1;
-}
-
-.register-form-agreement-text {
-  font-size: 14px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  text-underline-position: under;
-}
-
-.register-form-agreement-link {
-  color: #ff6c00;
-}
-
-.register-form-btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.register-form__btn {
+  display: block;
+  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -625,15 +580,11 @@ ul {
   padding: 10px 25px;
   color: #303030;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   background-color: transparent;
   border: 1px solid #ff6c00;
-  border-radius: 10px;
   cursor: pointer;
-}
-
-.register-form-btn-icon {
-  fill: #ff6c00;
 }
 
 .contacts-form {
@@ -833,6 +784,36 @@ ul {
 }
 .contacts-form__message:focus, .contacts-form__message:not(:placeholder-shown) {
   border-color: #ffffff;
+}
+
+.agreement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+.agreement__text {
+  font-size: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-underline-position: under;
+}
+.agreement__link {
+  color: #ff6c00;
+}
+
+.agreement__icon {
+  -webkit-transition: fill var(--animation);
+  transition: fill var(--animation);
+}
+.agreement__checkbox:hover + .agreement__icon, .agreement__checkbox:focus + .agreement__icon {
+  fill: var(--acent-color);
 }
 
 .header {
@@ -1258,7 +1239,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.footer-container {
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1269,15 +1250,14 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.footer-copyright {
+.footer__copyright {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9da4bd;
 }
 
-.footer-list {
+.footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1289,8 +1269,15 @@ ul {
           align-items: center;
   gap: 40px;
 }
+.footer__list:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
 
-.footer-link {
+.footer__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1306,18 +1293,8 @@ ul {
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
-
-.footer-link:hover,
-.footer-link:focus {
+.footer__link:hover, .footer__link:focus {
   color: var(--acent-color);
-}
-
-.footer-list:before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 1px;
-  background-color: #303030;
 }
 
 .backdrop {
@@ -1327,7 +1304,7 @@ ul {
   z-index: 1000;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   /* властивості за змовчуванням */
   opacity: 1;
   visibility: visible;
@@ -1335,8 +1312,7 @@ ul {
   -webkit-transition: opacity 600ms ease-out, visibility 600ms ease-out;
   transition: opacity 600ms ease-out, visibility 600ms ease-out;
 }
-
-.backdrop.is-hidden {
+.backdrop--is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1348,24 +1324,23 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
           transform: translate(-50%, -50%) scale(1) rotate(0);
-  width: 400px;
-  height: 500px;
+  width: 450px;
+  min-height: 500px;
+  padding: 25px;
   background-color: #fff;
   border-radius: 20px;
-  opacity: 1;
   -webkit-transition: opacity 400ms ease-in-out 200ms, -webkit-transform 400ms ease-in-out 200ms;
   transition: opacity 400ms ease-in-out 200ms, -webkit-transform 400ms ease-in-out 200ms;
   transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 200ms;
   transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 200ms, -webkit-transform 400ms ease-in-out 200ms;
 }
-
-.backdrop.is-hidden .modal {
+.backdrop--is-hidden .modal {
   opacity: 0;
   -webkit-transform: translate(-50%, -50%) scale(0.3) rotate(1turn);
           transform: translate(-50%, -50%) scale(0.3) rotate(1turn);
 }
 
-.modal-btn {
+.modal__btn {
   position: absolute;
   top: 10px;
   right: 10px;
