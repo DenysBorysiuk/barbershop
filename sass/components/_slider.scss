@@ -1,4 +1,8 @@
 .slider-controls {
+  @media screen and (max-width: calc($desktop - 1px)) {
+    display: none;
+  }
+
   position: absolute;
   right: 0;
   bottom: 40px;
@@ -30,6 +34,10 @@
 }
 
 .pagination {
+  @media screen and (max-width: calc($desktop - 1px)) {
+    display: none;
+  }
+
   position: absolute;
   top: 50%;
   right: 0;
