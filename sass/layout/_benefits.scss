@@ -3,11 +3,29 @@
 
   &__container {
     display: flex;
+    flex-direction: column-reverse;
+
+    @media screen and (max-width: calc($desktop - 1px)) {
+      gap: 44px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+    }
   }
 
   &__group {
-    flex-basis: 500px;
-    margin-left: auto;
+    @media screen and (min-width: $tablet) {
+      max-width: 500px;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-basis: 500px;
+      margin-left: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
   }
 
   &__list {
@@ -24,7 +42,7 @@
   min-height: 133px;
   padding: 20px;
 
-  background-color: var(--bg-cl);
+  background-color: var(--light-bg-cl);
   text-align: center;
 
   &:nth-child(2n + 1) {

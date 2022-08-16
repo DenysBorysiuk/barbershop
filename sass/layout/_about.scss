@@ -40,6 +40,7 @@
     margin-bottom: 20px;
     @media screen and (max-width: 1199px) {
       max-width: 330px;
+      @include fonts(28px, 33px, 700, 0.05em);
     }
   }
 

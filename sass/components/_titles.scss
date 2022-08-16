@@ -1,11 +1,7 @@
 .section-title {
-  @include fonts(28px, 33px, 700, 0.05em);
+  @include fonts(42px, 49px, 700, 0.05em);
   font-family: var(--secondary-font);
   color: var(--main-dark-cl);
-
-  @media screen and (min-width: $desktop) {
-    @include fonts(42px, 49px, 700, 0.05em);
-  }
 }
 
 .section-title--mode-light {
