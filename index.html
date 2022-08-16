@@ -471,26 +471,242 @@
       </section>
 
       <!-- portfolio sections -->
-      <!-- <section class="portfolio">
+      <section class="portfolio">
         <div class="container">
           <h2 class="visually-hidden">Портфолио</h2>
           <p class="uppertitle">На латинском языке “барба” означает “борода”</p>
           <ul class="portfolio__list card-set">
             <li class="card-set-item">
-              <img src="./images/portfolio/img1.jpg" alt="" width="270" height="360" />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-1_lg@1x.webp 1x,
+                    ./images/portfolio/portfolio-1_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-1_lg@1x.jpg 1x,
+                    ./images/portfolio/portfolio-1_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-1_md@1x.webp 1x,
+                    ./images/portfolio/portfolio-1_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-1_md@1x.jpg 1x,
+                    ./images/portfolio/portfolio-1_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-1_sm@1x.webp 1x,
+                    ./images/portfolio/portfolio-1_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-1_sm@1x.jpg 1x,
+                    ./images/portfolio/portfolio-1_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images/portfolio/portfolio-1_sm@1x.jpg" alt="" />
+              </picture>
             </li>
             <li class="card-set-item">
-              <img src="./images/portfolio/img2.jpg" alt="" width="270" height="360" />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-2_lg@1x.webp 1x,
+                    ./images/portfolio/portfolio-2_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-2_lg@1x.jpg 1x,
+                    ./images/portfolio/portfolio-2_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-2_md@1x.webp 1x,
+                    ./images/portfolio/portfolio-2_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-2_md@1x.jpg 1x,
+                    ./images/portfolio/portfolio-2_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-2_sm@1x.webp 1x,
+                    ./images/portfolio/portfolio-2_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-2_sm@1x.jpg 1x,
+                    ./images/portfolio/portfolio-2_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images/portfolio/portfolio-2_sm@1x.jpg" alt="" />
+              </picture>
             </li>
             <li class="card-set-item">
-              <img src="./images/portfolio/img3.jpg" alt="" width="270" height="360" />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-3_lg@1x.webp 1x,
+                    ./images/portfolio/portfolio-3_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-3_lg@1x.jpg 1x,
+                    ./images/portfolio/portfolio-3_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-3_md@1x.webp 1x,
+                    ./images/portfolio/portfolio-3_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-3_md@1x.jpg 1x,
+                    ./images/portfolio/portfolio-3_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-3_sm@1x.webp 1x,
+                    ./images/portfolio/portfolio-3_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-3_sm@1x.jpg 1x,
+                    ./images/portfolio/portfolio-3_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images/portfolio/portfolio-3_sm@1x.jpg" alt="" />
+              </picture>
             </li>
             <li class="card-set-item">
-              <img src="./images/portfolio/img4.jpg" alt="" width="270" height="360" />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-4_lg@1x.webp 1x,
+                    ./images/team/team-1_lg@2x.webp           2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-4_lg@1x.jpg 1x,
+                    ./images/team/team-1_lg@2x.jpg           2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-4_md@1x.webp 1x,
+                    ./images/team/team-1_md@2x.webp           2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-4_md@1x.jpg 1x,
+                    ./images/team/team-1_md@2x.jpg           2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-4_sm@1x.webp 1x,
+                    ./images/team/team-1_sm@2x.webp           2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-4_sm@1x.jpg 1x,
+                    ./images/team/team-1_sm@2x.jpg           2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images/portfolio/portfolio-4_sm@1x.jpg" alt="photo" />
+              </picture>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- contacts sections -->
       <!-- <section class="contacts" id="contacts">

@@ -65,7 +65,7 @@
 
   &__img {
     @media screen and (max-width: 1199px) {
-      width: 330px;
+      max-width: 330px;
       height: 235px;
     }
   }
