@@ -78,19 +78,95 @@
       </section>
 
       <!-- about sections -->
-      <!-- <section class="about" id="about">
+      <section class="about" id="about">
         <div class="about__container container">
           <ul class="about__list">
             <li class="about__item">
-              <img src="images/about/img1.jpg" alt="" width="270" height="445" />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about-1_lg@1x.webp 1x,
+                    ./images/about/about-1_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/about/about-1_lg@1x.jpg 1x, ./images/about/about-1_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about/about-1_md@1x.webp 1x,
+                    ./images/about/about-1_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/about/about-1_md@1x.jpg 1x, ./images/about/about-1_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- fallback -->
+                <img
+                  class="about__img"
+                  src="./images/about/about-1_sm@1x.jpg"
+                  width="270"
+                  height="445"
+                  alt="photo"
+                />
+              </picture>
             </li>
             <li class="about__item">
-              <img src="images/about/img2.jpg" alt="" width="270" height="445" />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about-2_lg@1x.webp 1x,
+                    ./images/about/about-2_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/about/about-2_lg@1x.jpg 1x, ./images/about/about-1_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about/about-2_md@1x.webp 1x,
+                    ./images/about/about-2_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/about/about-2_md@1x.jpg 1x, ./images/about/about-1_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- fallback -->
+                <img
+                  class="about__img"
+                  src="./images/about/about-2_sm@1x.jpg"
+                  width="270"
+                  height="445"
+                  alt="photo"
+                />
+              </picture>
             </li>
           </ul>
           <div class="about__content">
             <p class="uppertitle">о нас</p>
-            <h2 class="about__title section-title">Лучший Барбершоп твоего города</h2>
+            <h2 class="about__title section-title">Лучший Барбершоп твоего&nbspгорода</h2>
             <h3 class="about__subtitle">
               Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
             </h3>
@@ -103,7 +179,7 @@
             <button class="about__btn btn" type="button">онлайн-запись</button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- price sections -->
       <!-- <section class="price" id="price">

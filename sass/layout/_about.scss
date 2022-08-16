@@ -2,27 +2,54 @@
   @include section;
 
   &__container {
-    display: flex;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 64px;
+    }
   }
 
   &__list {
-    display: flex;
-    gap: 30px;
-    margin-right: 64px;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      flex-basis: 50%;
+      gap: 30px;
+    }
   }
 
   &__content {
-    flex-basis: 500px;
+    @media screen and (min-width: $tablet) {
+      flex-basis: 330px;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-basis: 500px;
+    }
   }
 
   &__title {
     margin-bottom: 20px;
+    @media screen and (max-width: 1199px) {
+      max-width: 330px;
+    }
   }
 
   &__subtitle {
     margin-bottom: 20px;
+    @include fonts(16px, 26px);
 
-    @include fonts(18px, 30px);
+    @media screen and (min-width: $desktop) {
+      @include fonts(18px, 30px);
+    }
   }
 
   &__desc {
@@ -33,5 +60,12 @@
 
   &__btn {
     color: var(--main-dark-cl);
+  }
+
+  &__img {
+    @media screen and (max-width: 1199px) {
+      width: 330px;
+      height: 235px;
+    }
   }
 }
