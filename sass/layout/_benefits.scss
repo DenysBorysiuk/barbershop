@@ -30,17 +30,30 @@
 
   &__list {
     display: flex;
-    align-items: flex-end;
     flex-wrap: wrap;
-    width: 370px;
-    margin: 0 auto;
+    align-items: flex-end;
+    width: 417px;
+
+    @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+      margin-left: auto;
+      width: 450px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 370px;
+      margin: 0 auto;
+    }
   }
 }
 
 .benefits__item {
-  width: 170px;
+  width: 193px;
   min-height: 133px;
   padding: 20px;
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+  }
 
   background-color: var(--light-bg-cl);
   text-align: center;

@@ -1401,21 +1401,37 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 370px;
-  margin: 0 auto;
+  width: 417px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits__list {
+    margin-left: auto;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    width: 370px;
+    margin: 0 auto;
+  }
 }
 
 .benefits__item {
-  width: 170px;
+  width: 193px;
   min-height: 133px;
   padding: 20px;
   background-color: var(--light-bg-cl);
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 170px;
+  }
 }
 .benefits__item:nth-child(2n+1) {
   margin-bottom: 30px;
