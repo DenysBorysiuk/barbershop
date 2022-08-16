@@ -5,11 +5,23 @@
   margin-right: auto;
   background: var(--light-bg-cl);
 
+  &__container {
+    @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+      max-width: 450px;
+    }
+  }
+
   &__title {
     margin-bottom: 44px;
   }
 
-  &__img {
+  &__list {
+    @media screen and (max-width: calc($desktop - 1px)) {
+      --items: 1;
+    }
+  }
+
+  &__thumb {
     margin-bottom: 20px;
   }
 

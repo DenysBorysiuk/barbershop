@@ -1406,7 +1406,7 @@ ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 417px;
+  max-width: 417px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits__list {
@@ -1489,10 +1489,20 @@ ul {
     padding-bottom: 130px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__container {
+    max-width: 450px;
+  }
+}
 .team__title {
   margin-bottom: 44px;
 }
-.team__img {
+@media screen and (max-width: 1199px) {
+  .team__list {
+    --items: 1;
+  }
+}
+.team__thumb {
   margin-bottom: 20px;
 }
 .team__subtitle {

@@ -115,7 +115,7 @@
                 <!-- fallback -->
                 <img
                   class="about__img"
-                  src="./images/about/about-1_sm@1x.jpg"
+                  src="./images/about/about-1_md@1x.jpg"
                   width="270"
                   height="445"
                   alt="photo"
@@ -156,7 +156,7 @@
                 <!-- fallback -->
                 <img
                   class="about__img"
-                  src="./images/about/about-2_sm@1x.jpg"
+                  src="./images/about/about-2_md@1x.jpg"
                   width="270"
                   height="445"
                   alt="photo"
@@ -241,19 +241,51 @@
       </section>
 
       <!-- team sections -->
-      <!-- <section class="team" id="masters">
-        <div class="container">
+      <section class="team" id="masters">
+        <div class="container team__container">
           <p class="uppertitle">для настоящих ценителей атмосферы</p>
           <h2 class="team__title section-title">Наши мастера</h2>
-          <ul class="card-set">
-            <li class="card-set__item">
-              <img
-                class="team__img"
-                src="images/masters/img1.jpg"
-                alt=""
-                width="370"
-                height="346"
-              />
+          <ul class="card-set team__list">
+            <li class="card-set__item team__item">
+              <div class="team__thumb">
+                <picture>
+                  <!-- desktop screen -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/team/team-1_lg@1x.webp 1x, ./images/team/team-1_lg@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/team/team-1_lg@1x.jpg 1x, ./images/team/team-1_lg@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/team-1_md@1x.webp 1x, ./images/team/team-1_md@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/team-1_md@1x.jpg 1x, ./images/team/team-1_md@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/team/team-1_sm@1x.webp 1x, ./images/team/team-1_sm@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/team/team-1_sm@1x.jpg 1x, ./images/team/team-1_sm@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- fallback -->
+                  <img src="./images/team/team-1_sm@1x.jpg" alt="photo" />
+                </picture>
+              </div>
               <h3 class="team__subtitle">John Smith</h3>
               <p class="team__desc">Extreme Barber</p>
               <ul class="socials">
@@ -287,14 +319,46 @@
                 </li>
               </ul>
             </li>
-            <li class="card-set__item">
-              <img
-                class="team__img"
-                src="images/masters/img2.jpg"
-                alt=""
-                width="370"
-                height="346"
-              />
+            <li class="card-set__item team__item">
+              <div class="team__thumb">
+                <picture>
+                  <!-- desktop screen -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/team/team-2_lg@1x.webp 1x, ./images/team/team-1_lg@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/team/team-2_lg@1x.jpg 1x, ./images/team/team-1_lg@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/team-2_md@1x.webp 1x, ./images/team/team-1_md@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/team-2_md@1x.jpg 1x, ./images/team/team-1_md@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/team/team-2_sm@1x.webp 1x, ./images/team/team-1_sm@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/team/team-2_sm@1x.jpg 1x, ./images/team/team-1_sm@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- fallback -->
+                  <img src="./images/team/team-2_sm@1x.jpg" width="450" height="346" alt="photo" />
+                </picture>
+              </div>
               <h3 class="team__subtitle">Michele Doe</h3>
               <p class="team__desc">Extreme Barber</p>
               <ul class="socials">
@@ -328,14 +392,47 @@
                 </li>
               </ul>
             </li>
-            <li class="card-set__item">
-              <img
-                class="team__img"
-                src="images/masters/img3.jpg"
-                alt=""
-                width="370"
-                height="346"
-              />
+            <li class="card-set__item team__item">
+              <div class="team__thumb">
+                <picture>
+                  <!-- desktop screen -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/team/team-3_lg@1x.webp 1x, ./images/team/team-1_lg@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/team/team-3_lg@1x.jpg 1x, ./images/team/team-1_lg@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/team-3_md@1x.webp 1x, ./images/team/team-1_md@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/team-3_md@1x.jpg 1x, ./images/team/team-1_md@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/team/team-3_sm@1x.webp 1x, ./images/team/team-1_sm@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/team/team-3_sm@1x.jpg 1x, ./images/team/team-1_sm@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- fallback -->
+                  <img src="./images/team/team-3_sm@1x.jpg" width="450" height="346" alt="photo" />
+                </picture>
+              </div>
+
               <h3 class="team__subtitle">Alan Black</h3>
               <p class="team__desc">Extreme Barber</p>
               <ul class="socials">
@@ -371,7 +468,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- portfolio sections -->
       <!-- <section class="portfolio">

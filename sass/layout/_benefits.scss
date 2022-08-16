@@ -32,7 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    width: 417px;
+    max-width: 417px;
 
     @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
       margin-left: auto;
