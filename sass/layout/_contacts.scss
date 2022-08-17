@@ -40,7 +40,7 @@
 
   &--left-side,
   &--right-side {
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
     flex-basis: 100%;
     @media screen and(max-width: calc($desktop - 1px)) {
       @include section;

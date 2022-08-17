@@ -1682,7 +1682,6 @@ ul {
       flex-wrap: wrap;
 }
 .contacts--left-side, .contacts--right-side {
-  outline: 1px solid tomato;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
