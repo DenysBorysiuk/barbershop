@@ -634,12 +634,19 @@ ul {
 }
 
 .contacts-form {
-  width: 560px;
+  max-width: 560px;
+}
+@media screen and (max-width: 1199px) {
+  .contacts-form {
+    max-width: 690px;
+  }
 }
 .contacts-form__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -649,18 +656,53 @@ ul {
 .contacts-form__btn {
   margin-top: 44px;
 }
+@media screen and (max-width: 767px) {
+  .contacts-form__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 44px;
+  }
+}
 
 .contacts-form__group {
   position: relative;
   display: block;
 }
-.contacts-form__group:first-child {
-  -ms-flex-preferred-size: 270px;
-      flex-basis: 270px;
+@media screen and (max-width: 767px) {
+  .contacts-form__group:first-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
 }
-.contacts-form__group:last-child {
-  -ms-flex-preferred-size: 260px;
-      flex-basis: 260px;
+@media screen and (min-width: 768px) {
+  .contacts-form__group:first-child {
+    -ms-flex-preferred-size: 330px;
+        flex-basis: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-form__group:first-child {
+    -ms-flex-preferred-size: 270px;
+        flex-basis: 270px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts-form__group:last-child {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-form__group:last-child {
+    -ms-flex-preferred-size: 330px;
+        flex-basis: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-form__group:last-child {
+    -ms-flex-preferred-size: 260px;
+        flex-basis: 260px;
+  }
 }
 
 .contacts-form__input {
@@ -997,6 +1039,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     height: 680px;
     background-position: top right, center;
     background-image: url("../images/hero/hero-bg_md@1x.jpg");
@@ -1011,6 +1054,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    display: block;
     max-width: 1280px;
     background-position: top right, center;
     background-image: url("../images/hero/hero-bg_lg@1x.jpg");
@@ -1074,10 +1118,6 @@ ul {
   }
 }
 .hero__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
   font-family: var(--secondary-font);
   color: var(--main-light-cl);
   margin-bottom: 20px;
@@ -1086,7 +1126,15 @@ ul {
   -webkit-transform-origin: left center;
           transform-origin: left center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .hero__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (max-width: 1199px) {
   .hero__title {
     font-weight: 700;
     font-size: 48px;
@@ -1576,9 +1624,8 @@ ul {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--dark-bg-cl);
-  background-image: url(../images/contacts/Bg.png);
   background-repeat: no-repeat;
-  background-position: top 0 left calc(50% + 328px);
+  background-position: top calc(50% + 328px);
 }
 @media screen and (min-width: 768px) {
   .contacts {
@@ -1592,20 +1639,41 @@ ul {
     padding-bottom: 130px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts {
+    background-image: url(../images/contacts/Bg.png);
+    background-position: top 0 left calc(50% + 328px);
+  }
+}
 .contacts__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .contacts--left-side, .contacts--right-side {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
-.contacts--right-side {
-  padding-left: 100px;
+@media screen and (min-width: 1200px) {
+  .contacts--left-side, .contacts--right-side {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts--right-side {
+    padding-left: 100px;
+  }
 }
 .contacts__form-title {
   margin-bottom: 44px;
+}
+@media screen and (max-width: 1199px) {
+  .contacts__form-title {
+    text-align: center;
+  }
 }
 .contacts__title {
   margin-bottom: 40px;

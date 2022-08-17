@@ -4,25 +4,40 @@
   margin-left: auto;
   margin-right: auto;
   background-color: var(--dark-bg-cl);
-  background-image: url(../images/contacts/Bg.png);
+  // background-image: url(../images/contacts/Bg.png);
   background-repeat: no-repeat;
-  background-position: top 0 left calc(50% + 328px);
+  background-position: top calc(50% + 328px);
+
+  @media screen and(min-width: $desktop) {
+    background-image: url(../images/contacts/Bg.png);
+    background-position: top 0 left calc(50% + 328px);
+  }
 
   &__container {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &--left-side,
   &--right-side {
-    flex-basis: 50%;
+    flex-basis: 100%;
+    @media screen and(min-width: $desktop) {
+      flex-basis: 50%;
+    }
   }
 
   &--right-side {
-    padding-left: 100px;
+    // text-align: center;
+    @media screen and(min-width: $desktop) {
+      padding-left: 100px;
+    }
   }
 
   &__form-title {
     margin-bottom: 44px;
+    @media screen and(max-width: calc($desktop - 1px)) {
+      text-align: center;
+    }
   }
 
   &__title {

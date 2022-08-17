@@ -16,6 +16,7 @@
   }
 
   @media screen and (max-width: calc($tablet - 1px)) {
+    // display: none;
     background-size: cover;
     min-height: 580px;
     padding-top: 208px;
@@ -24,6 +25,8 @@
   }
 
   @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    // display: none;
     height: 680px;
     background-position: top right, center;
     background-image: url('../images/hero/hero-bg_md@1x.jpg');
@@ -39,6 +42,7 @@
   }
 
   @media screen and (min-width: $desktop) {
+    display: block;
     max-width: 1280px;
     background-position: top right, center;
 
@@ -93,7 +97,8 @@
   }
 
   &__title {
-    @include fonts(36px, 54px, 700, 0.05em);
+    // display: none;
+    // @include fonts(36px, 54px, 700, 0.05em);
     font-family: var(--secondary-font);
     color: var(--main-light-cl);
     margin-bottom: 20px;
@@ -101,7 +106,11 @@
     animation: fade-in 800ms ease 500ms backwards alternate;
     transform-origin: left center;
 
-    @media screen and (max-width: calc($tablet - 1px)) {
+    @media screen and (max-width: calc($mobile - 1px)) {
+      @include fonts(36px, 48px, 700, 0.02em);
+    }
+
+    @media screen and (max-width: calc($desktop - 1px)) {
       @include fonts(48px, 56px, 700, 0.05em);
     }
 
