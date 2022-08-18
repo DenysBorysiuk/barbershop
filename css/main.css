@@ -1409,7 +1409,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1420,7 +1420,6 @@ ul {
             flex-direction: row;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-    gap: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1468,6 +1467,11 @@ ul {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about__desc {
+    margin-bottom: 80px;
+  }
 }
 .about__btn {
   color: var(--main-dark-cl);
