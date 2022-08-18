@@ -49,6 +49,7 @@
     margin-bottom: 50px;
 
     @media screen and (max-width: calc($desktop - 1px)) {
+      padding: 30px 40px;
       background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
     }
 
@@ -66,16 +67,18 @@
 
 .price__item {
   flex-basis: 50%;
-  padding: 30px 40px;
+  // padding: 30px 40px;
 
   &:nth-child(1) {
     @media screen and (min-width: $desktop) {
+      padding: 30px 40px;
       background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
     }
   }
 
   &:nth-child(2) {
     @media screen and (min-width: $desktop) {
+      padding: 30px 40px;
       background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
     }
   }
@@ -85,8 +88,12 @@
   display: flex;
   align-items: baseline;
   gap: 6px;
-  @include fonts(18px, 30px);
+  @include fonts(14px, 20px);
   color: var(--secondary-font-cl);
+
+  @media screen and(min-width: $tablet) {
+    @include fonts(18px, 30px);
+  }
 
   &:not(:last-child) {
     margin-bottom: 20px;
