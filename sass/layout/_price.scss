@@ -82,10 +82,24 @@
 }
 
 .price__inner-item {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
   @include fonts(18px, 30px);
   color: var(--secondary-font-cl);
 
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  &::before {
+    content: '';
+
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+  }
+}
+.price__inner-desc:first-child {
+  order: -1;
 }

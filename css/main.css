@@ -1586,6 +1586,13 @@ ul {
 }
 
 .price__inner-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 6px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -1594,6 +1601,20 @@ ul {
 }
 .price__inner-item:not(:last-child) {
   margin-bottom: 20px;
+}
+.price__inner-item::before {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.price__inner-desc:first-child {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 .benefits {
