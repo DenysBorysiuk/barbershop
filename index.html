@@ -19,10 +19,13 @@
     <!-- header sections -->
     <header class="header" data-header>
       <div class="header__container container">
+        <a class="header__logo" href="/">
+          <svg class="header__icon" width="69" height="56">
+            <use href="/images/icons.svg#logo"></use>
+          </svg>
+          <!-- <img src="./images/icons/Logo.svg" alt="logo" /> -->
+        </a>
         <nav class="nav">
-          <a class="header__logo" href="/">
-            <img src="./images/icons/Logo.svg" alt="logo" />
-          </a>
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
             <li class="nav__item"><a class="nav__link" href="#price">Услуги и цены</a></li>
@@ -34,6 +37,11 @@
           <a class="header__phone" href="tel:+380441111111">+38 044 111 11 11</a>
           <button class="header__btn btn" type="button" data-modal-open>ОНЛАЙН ЗАПИСЬ</button>
         </div>
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -875,7 +883,52 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+    <div class="menu-overlay" data-menu>
+      <div class="menu-container">
+        <button class="menu-btn" type="button" data-menu-close>
+          <svg class="menu-close-icon" width="40" height="40">
+            <use href="./images/icons.svg#menu-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-nav list">
+          <li class="mobile-nav-item">
+            <a href="" class="mobile-link link">О нас</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="" class="mobile-link link">Услуги и цены</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="" class="mobile-link link">Мастера</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="" class="mobile-link link">Контакты</a>
+          </li>
+        </ul>
+        <div class="mobile-contacts">
+          <a class="mobile-contacts-link link" href="+380441111111">+38 044 111 11 11</a>
+          <button class="mobile-contacts-btn btn" type="button">онлайн-запись</button>
+        </div>
+        <ul class="mobile-socilas list">
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">Instagram</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">Twitter</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">Facebook</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/header-scroll.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
