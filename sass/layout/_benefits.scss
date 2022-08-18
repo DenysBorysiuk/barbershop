@@ -31,10 +31,10 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     max-width: 417px;
 
     @media screen and(max-width: calc($mobile - 1px)) {
+      justify-content: center;
       gap: 40px;
     }
 

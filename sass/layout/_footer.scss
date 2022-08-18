@@ -1,11 +1,19 @@
 .footer {
   &__container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+
+    @media screen and(min-width:$mobile) {
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__copyright {
+    @media screen and(max-width: $mobile) {
+      display: none;
+    }
+
     @include fonts(11px, 15px);
     color: var(--secondary-font-cl);
   }
