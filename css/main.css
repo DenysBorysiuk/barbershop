@@ -1486,10 +1486,11 @@ ul {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--price-bg-cl);
-  background-image: url(../images/price/img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: url("../images/prices/prices-bg_sm@1x.png");
+  background-image: -webkit-image-set(url("../images/prices/prices-bg_sm@1x.webp") 1x);
 }
 @media screen and (min-width: 768px) {
   .price {
@@ -1501,6 +1502,36 @@ ul {
   .price {
     padding-top: 130px;
     padding-bottom: 130px;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .price {
+    background-image: url("../images/prices/prices-bg_sm@2x.png");
+    background-image: -webkit-image-set(url("../images/prices/prices-bg_sm@2x.webp") 2x);
+  }
+}
+@media screen and (min-width: 768px) {
+  .price {
+    background-image: url("../images/prices/prices-bg_md@1x.png");
+    background-image: -webkit-image-set(url("../images/prices/prices-bg_md@1x.webp") 1x);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .price {
+    background-image: url("../images/prices/prices-bg_md@2x.png");
+    background-image: -webkit-image-set(url("../images/prices/prices-bg_md@2x.webp") 2x);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .price {
+    background-image: url("../images/prices/prices-bg_lg@1x.png");
+    background-image: -webkit-image-set(url("../images/prices/prices-bg_lg@1x.webp") 1x);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .price {
+    background-image: url("../images/prices/prices-bg_lg@2x.png");
+    background-image: -webkit-image-set(url("../images/prices/prices-bg_lg@2x.webp") 2x);
   }
 }
 .price__title {
@@ -1646,6 +1677,8 @@ ul {
   width: 193px;
   min-height: 133px;
   padding: 20px;
+  -webkit-box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
   background-color: var(--light-bg-cl);
   text-align: center;
 }
@@ -1789,24 +1822,28 @@ ul {
   .contacts {
     background-position: center bottom;
     background-size: 100% 496px;
-    background-image: url(../images/contacts/contacts-bg_sm@1x.png);
+    background-image: url("../images/contacts/contacts-bg_sm@1x.png");
+    background-image: -webkit-image-set(url("../images/contacts/contacts-bg_sm@1x.webp") 1x);
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../images/contacts/contacts-bg_sm@2x.png);
+    background-image: url("../images/contacts/contacts-bg_sm@2x.png");
+    background-image: -webkit-image-set(url("../images/contacts/contacts-bg_sm@2x.webp") 2x);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     background-position: center bottom;
     background-size: 100% 449px;
-    background-image: url(../images/contacts/contacts-bg_md@1x.png);
+    background-image: url("../images/contacts/contacts-bg_md@1x.png");
+    background-image: -webkit-image-set(url("../images/contacts/contacts-bg_md@1x.webp") 1x);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../images/contacts/contacts-bg_md@2x.png);
+    background-image: url("../images/contacts/contacts-bg_md@2x.png");
+    background-image: -webkit-image-set(url("../images/contacts/contacts-bg_md@2x.webp") 2x);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1814,7 +1851,8 @@ ul {
     padding-top: 84px;
     padding-bottom: 84px;
     background-position: top 0 left calc(50% + 328px);
-    background-image: url(../images/contacts/contacts-bg_lg@1x.png);
+    background-image: url("../images/contacts/contacts-bg_lg@1x.png");
+    background-image: -webkit-image-set(url("../images/contacts/contacts-bg_lg@1x.webp") 1x);
   }
 }
 @media screen and (min-width: 1200px) and (min-width: 768px) {
@@ -1831,7 +1869,8 @@ ul {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../images/contacts/contacts-bg_lg@2x.png);
+    background-image: url("../images/contacts/contacts-bg_lg@2x.png");
+    background-image: -webkit-image-set(url("../images/contacts/contacts-bg_lg@2x.webp") 2x);
   }
 }
 .contacts__container {
