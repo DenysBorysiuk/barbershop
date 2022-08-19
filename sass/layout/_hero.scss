@@ -4,8 +4,8 @@
 
   background-repeat: no-repeat;
 
-  background-image: url('../images/hero/hero-bg_sm@1x.jpg'),
-    linear-gradient(to right, rgb(255, 255, 255) 155px, rgba(25, 28, 38, 0.2) 155px);
+  background-image: url('../images/hero/hero-bg_sm@1x.jpg');
+  // linear-gradient(to right, rgb(255, 255, 255) 155px, rgba(25, 28, 38, 0.2) 155px);
 
   background-image: -webkit-image-set(url('../images/hero/hero-bg_sm@1x.webp') 1x);
 
@@ -26,8 +26,7 @@
     background-position: top right, center;
     background-image: url('../images/hero/hero-bg_md@1x.jpg');
 
-    background-image: -webkit-image-set(url('../images/hero/hero-bg_md@1x.webp') 1x),
-      linear-gradient(to right, rgb(255, 255, 255) 155px, rgba(25, 28, 38, 0.2) 155px);
+    background-image: -webkit-image-set(url('../images/hero/hero-bg_md@1x.webp') 1x);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/hero-bg_md@2x.jpg');
