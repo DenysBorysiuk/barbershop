@@ -1178,51 +1178,6 @@ ul {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  background-repeat: no-repeat;
-  background-image: url("../images/hero/hero-bg_sm@1x.jpg");
-  background-image: -webkit-image-set(url("../images/hero/hero-bg_sm@1x.webp") 1x);
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../images/hero/hero-bg_sm@2x.jpg");
-    background-image: -webkit-image-set(url("../images/hero/hero-bg_sm@2x.webp") 2x);
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .hero {
-    background-size: cover;
-    min-height: 580px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    max-width: 768px;
-    height: 680px;
-    background-position: top right, center;
-    background-image: url("../images/hero/hero-bg_md@1x.jpg");
-    background-image: -webkit-image-set(url("../images/hero/hero-bg_md@1x.webp") 1x);
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../images/hero/hero-bg_md@2x.jpg");
-    background-image: -webkit-image-set(url("../images/hero/hero-bg_md@2x.webp") 2x);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    display: block;
-    max-width: 1280px;
-    background-position: top right, center;
-    background-image: url("../images/hero/hero-bg_lg@1x.jpg");
-    background-image: -webkit-image-set(url("../images/hero/hero-bg_lg@1x.webp") 1x);
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../images/hero/hero-bg_lg@2x.jpg");
-    background-image: -webkit-image-set(url("../images/hero/hero-bg_lg@2x.webp") 2x);
-  }
 }
 .hero__container {
   display: -webkit-box;
@@ -1250,6 +1205,7 @@ ul {
 .hero__right-side {
   padding-top: 208px;
   padding-bottom: 183px;
+  background-color: black;
 }
 @media screen and (min-width: 480px) {
   .hero__right-side {
