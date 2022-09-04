@@ -8,9 +8,9 @@
 
   &__list {
     display: flex;
-    gap: 23px;
+    gap: 16px;
     @media screen and(min-width: $desktop) {
-      gap: 40px;
+      gap: 30px;
     }
   }
 }

@@ -382,11 +382,11 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 23px;
+  gap: 16px;
 }
 @media screen and (min-width: 1200px) {
   .nav__list {
-    gap: 40px;
+    gap: 30px;
   }
 }
 
@@ -1226,6 +1226,16 @@ ul {
 }
 .header__contacts {
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__contacts {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    margin-right: 8px;
+  }
 }
 @media screen and (max-width: 767px) {
   .header__btn {

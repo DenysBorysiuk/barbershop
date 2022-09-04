@@ -33,6 +33,14 @@
 
   &__contacts {
     margin-left: auto;
+
+    @media screen and(min-width: $tablet) {
+      margin-right: 20px;
+    }
+
+    @media screen and(min-width: $desktop) {
+      margin-right: 8px;
+    }
   }
 
   &__btn {

@@ -26,7 +26,6 @@
           <svg class="header__icon" width="69" height="56">
             <use href="/images/icons.svg#logo"></use>
           </svg>
-          <!-- <img src="./images/icons/Logo.svg" alt="logo" /> -->
         </a>
         <nav class="nav">
           <ul class="nav__list">
@@ -75,13 +74,85 @@
             <div class="swiper">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
-                  <img src="./images/hero/slider-3_md@1x.jpg" alt="slide1" />
+                 <picture>
+                  <!-- desktop screen -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/hero/slider-1_lg@1x.webp 1x, ./images/hero/slider-1_lg@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/hero/slider-1_lg@1x.jpg 1x, ./images/hero/slider-1_lg@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/hero/slider-1_md@1x.webp 1x, ./images/hero/slider-1_md@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/hero/slider-1_md@1x.jpg 1x, ./images/hero/slider-1_md@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/hero/slider-1_md@1x.jpg" loading="lazy" alt="slide-1" />
+                  </picture>
                 </li>
                 <li class="swiper-slide">
-                  <img src="./images/hero/slider-2_md@1x.jpg" alt="" />
+                  <picture>
+                  <!-- desktop screen -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/hero/slider-2_lg@1x.webp 1x, ./images/hero/slider-2_lg@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/hero/slider-2_lg@1x.jpg 1x, ./images/hero/slider-2_lg@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/hero/slider-2_md@1x.webp 1x, ./images/hero/slider-2_md@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/hero/slider-2_md@1x.jpg 1x, ./images/hero/slider-2_md@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/hero/slider-2_md@1x.jpg" loading="lazy" alt="slide-2" />
+                  </picture>
                 </li>
                 <li class="swiper-slide">
-                  <img src="./images/hero/slider-1_md@1x.jpg" alt="" />
+                  <picture>
+                  <!-- desktop screen -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/hero/slider-3_lg@1x.webp 1x, ./images/hero/slider-3_lg@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/hero/slider-3_lg@1x.jpg 1x, ./images/hero/slider-3_lg@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/hero/slider-3_md@1x.webp 1x, ./images/hero/slider-3_md@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/hero/slider-3_md@1x.jpg 1x, ./images/hero/slider-3_md@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/hero/slider-3_md@1x.jpg" loading="lazy" alt="slide-3" />
+                  </picture>
                 </li>
               </ul>
             <div class="pagination">
