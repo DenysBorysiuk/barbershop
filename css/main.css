@@ -1179,10 +1179,12 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-.hero__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 @media screen and (max-width: 767px) {
   .hero__left-side {
@@ -1205,7 +1207,7 @@ ul {
 .hero__right-side {
   padding-top: 208px;
   padding-bottom: 183px;
-  background-color: black;
+  background-color: rgba(25, 28, 38, 0.2);
 }
 @media screen and (min-width: 480px) {
   .hero__right-side {
@@ -1221,6 +1223,7 @@ ul {
     padding-top: 272px;
     padding-bottom: 245px;
     padding-left: 120px;
+    padding-right: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
