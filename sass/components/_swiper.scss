@@ -1,14 +1,18 @@
 .swiper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  // z-index: -1;
-  // margin: 0 auto;
-  width: 570px;
-  height: 680px;
-
   @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 570px;
+    height: 680px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1070px;
   }
 }
 

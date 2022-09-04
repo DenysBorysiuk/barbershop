@@ -12,6 +12,7 @@
 
 // components styles
 @import './components/container';
+@import './components/nav';
 @import './components/icon';
 @import './components/titles';
 @import './components/button';
@@ -22,10 +23,10 @@
 @import './components/contacts-form';
 @import './components/agreement';
 @import './components/mobile-menu';
+@import './components/modal';
 
 // layout styles
 @import './layout/header';
-@import './layout/nav';
 @import './layout/hero';
 @import './layout/about';
 @import './layout/price';
@@ -34,6 +35,5 @@
 @import './layout/portfolio';
 @import './layout/contacts';
 @import './layout/footer';
-@import './layout/modal';
 
 // @import './layout';
