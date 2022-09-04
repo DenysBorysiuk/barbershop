@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -68,17 +72,29 @@
               We are experts in trendy men’s haircuts. We&nbsp;work&nbsp;quickly,&nbsp;carefully and
               with style.
             </p>
+            <div class="swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <img src="./images/hero/slider-3_md@1x.jpg" alt="slide1" />
+                </li>
+                <li class="swiper-slide">
+                  <img src="./images/hero/slider-2_md@1x.jpg" alt="" />
+                </li>
+                <li class="swiper-slide">
+                  <img src="./images/hero/slider-1_md@1x.jpg" alt="" />
+                </li>
+              </ul>
             <div class="pagination">
               <div class="pagination-item active"></div>
               <div class="pagination-item"></div>
               <div class="pagination-item"></div>
             </div>
             <ul class="slider-controls list">
-              <li class="slider-item">
-                <button class="slider-btn disabled" type="button">Back</button>
+             <li class="slider-item slider-btn disabled swiper-button-prev">
+                Back
               </li>
-              <li class="slider-item">
-                <button class="slider-btn" type="button">Forward</button>
+              <li class="slider-item slider-btn swiper-button-next">
+                Forward
               </li>
             </ul>
           </div>

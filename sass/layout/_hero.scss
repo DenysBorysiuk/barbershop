@@ -77,9 +77,9 @@
     // background-color: black;
     // outline: 1px solid teal;
 
-    @media screen and (min-width: $mobile) {
-      padding-left: 30px;
-    }
+    // @media screen and (min-width: $mobile) {
+    //   padding-left: 30px;
+    // }
 
     @media screen and (min-width: $tablet) {
       position: relative;
@@ -88,7 +88,7 @@
       padding-bottom: 245px;
       padding-left: 120px;
       padding-right: 10px;
-      background-color: rgba(25, 28, 38, 0.2);
+      // background-color: rgba(25, 28, 38, 0.2);
     }
 
     @media screen and (min-width: $desktop) {
@@ -97,7 +97,6 @@
       padding-top: 272px;
       padding-bottom: 206px;
       padding-left: 100px;
-      // padding-right: 50px;
     }
   }
 
