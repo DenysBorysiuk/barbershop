@@ -1,7 +1,27 @@
 # Barbershop
 
-Use HTML, CSS, JavaScript, SAAS(SCSS) preprocessor and BEM methodology to build a website
+![Site image](./images/og-image.png)
 
-Layout is made relative to three transition points: 480px, 768px and 1200px.
+## 🗂️ Project description
 
-For writing styles, used the Mobile First approach .
+### Goals
+
+Implement the Barbershop landing page according to the technical
+specifications.
+
+### Used Technologies:
+
+- HTML
+- CSS
+- SAAS(SCSS)
+- JavaScript
+
+### Features
+
+- Layout is made relative to three transition points: 
+  - 480px 
+  - 768px 
+  - 1200px.
+
+- BEM methodology to build a website
+- For writing styles, used the Mobile First approach .
