@@ -1,4 +1,4 @@
-# Barbershop
+# 💈 Barbershop 
 
 ![Site image](./images/og-image.png)
 
