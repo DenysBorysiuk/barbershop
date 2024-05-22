@@ -24,4 +24,4 @@ specifications.
   - 1200px.
 
 - BEM methodology to build a website
-- For writing styles, used the Mobile First approach .
+- For writing styles, used the Mobile First approach.
